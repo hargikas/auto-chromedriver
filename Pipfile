@@ -8,6 +8,7 @@ requests = "*"
 logzero = "*"
 ubelt = "*"
 py-cpuinfo = "*"
+requests-toolbelt = "*"
 
 [dev-packages]
 rope = "*"

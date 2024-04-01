@@ -26,8 +26,9 @@ def _get_chrome_executable():
 
 
 def _windows_program_locations():
+
     possible_folders = [os.environ.get(
-        i) for i in ["ProgramFiles(x86)", "ProgramW6432"]]
+        i) for i in ["ProgramW6432", "ProgramFiles(x86)"] if i in os.environ]
     possible_folders.append(str(ub.Path.home()))
     for folder in possible_folders:
         if folder:
